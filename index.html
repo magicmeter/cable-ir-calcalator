@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>USB Type-C Cable IR Test</title>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="./css/styles.css"/>
+  <link rel="stylesheet" href="./css/styles_mobile.css"/>
+</head>
+<body>
+<h1>USB Type-C Cable IR Test</h1>
+<div id='userinputarea'>
+  <form id='meas1input'>
+    <fieldset>
+      <legend>Measurement 1</legend>
+      <div>
+        <label for="meas1dp">D+:</label>
+        <input type="number" id="meas1dp" name="meas1dp"/>V
+      </div>
+      <div>
+        <label for="meas1dm">D-:</label>
+        <input type="number" id="meas1dm" name="meas1dm"/>V
+      </div>
+      <div>
+        <label for="meas1current">Current:</label>
+        <input type="number" id="meas1current" name="meas1current"/>A
+      </div>
+      <input id="meas1rst" type="reset"/>
+    </fieldset>
+  </form> 
+  <form id='meas2input'>
+    <fieldset>
+      <legend>Measurement 2</legend>
+      <div>
+        <label for="meas2dp">D+:</label>
+        <input type="number" id="meas2dp" name="meas2dp"/>V
+      </div>
+      <div>
+        <label for="meas2dm">D-:</label>
+        <input type="number" id="meas2dm" name="meas2dm"/>V
+      </div>
+      <div>
+        <label for="meas2current">Current:</label>
+        <input type="number" id="meas2current" name="meas2current"/>A
+      </div>
+      <input id="meas2rst" type="reset"/>
+    </fieldset>
+  </form>
+  <input id="submitinput" type="button" value="Submit"/> <input id="rstall" type="reset" value="Reset All"/>
+</div>
+<div id="testresult" class="hide">
+  <h2>Result</h2>
+  <p class="inline">VBUS IR: <span id="resultvbusir">---</span> m&ohm;</p>
+  <p class="inline left-margin">GND IR: <span id="resultgndir">---</span> m&ohm;</p>
+  <p>Cable IR: <span id="resultcblir">---</span> m&ohm;</p>
+  <p id="result3a" class="inline hide">60W 3A: <span class="font-pass hide">PASS</span><span class="font-fail hide">FAIL</span></p>
+  <p id="result5a" class="inline hide">100W 5A: <span class="font-pass hide">PASS</span><span class="font-fail hide">FAIL</span></p>
+</div>
+<script src="./js/check_cable_ir.js"></script>
+</body>
+</html>

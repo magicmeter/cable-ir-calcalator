@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.65em;
+  }
+
+  #userinputarea form div {
+    font-size: 1em;   
+  }
+
+  #userinputarea input[type=number] {
+    width: 9em;
+  }
+
+  #result3a {
+    margin-right: 2em;
+  }
+
+  #result5a {    
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 358px) {  
+  #result3a {
+    margin-right: .3em;
+  } 
+}

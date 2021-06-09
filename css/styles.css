@@ -1,0 +1,52 @@
+.font-pass {color: green;}
+.font-fail {color: red;}
+.inline {display: inline;}
+.hide {display: none;}
+.left-margin {margin-left: 1em;}
+
+#userinputarea form {    
+  margin-bottom: 20px;
+}
+
+#userinputarea form div {
+  font-size: 1.4em;
+  margin: .5em;
+}
+
+#userinputarea input{    
+  font-size: 1em;
+}
+
+#userinputarea form input[type=reset],
+#userinputarea input[type=reset],
+#userinputarea input[type=button] {    
+  padding: .5em 1em;
+}
+
+#userinputarea input[type=button] {
+  margin-right: 6em;
+}
+
+#userinputarea legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#testresult p {
+  font-size: 1.4em;
+}
+
+#testresult p:nth-of-type(1),
+#testresult p:nth-of-type(2) {
+  font-size: 1em;
+}
+
+#result3a,
+#result5a {    
+  margin-right:5em;
+}
+
+#result3a span,
+#result5a span {    
+  font-weight:bold;
+}
