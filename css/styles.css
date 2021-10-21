@@ -43,10 +43,21 @@
 
 #result3a,
 #result5a {    
-  margin-right:5em;
+  margin: 0 0 1em;
+  float: left;
+}
+
+#result3a {
+  margin-right: 1em;
 }
 
 #result3a span,
 #result5a span {    
   font-weight:bold;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
